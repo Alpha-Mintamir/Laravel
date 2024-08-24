@@ -8,26 +8,28 @@ Route::get('/', function () {
     return view('home');
 });
 Route::get('/jobs', function () {
-    return View('jobs', [
-        $jobs = [
+    
+    
+    // return View('jobs', [
+    //     $jobs = [
 
-            [
-                'id' => 1,
-                'title' => 'bodyguard',
-                'salary' => 90,000,
-                'place' => 'adama'
-            ], [
-                'id' => 2,
-                'title' => 'programmer',
-                'salary' => 70,000,
-                'place' => 'bishoftu'
-            ], [
-                'id' => 3,
-                'title' => 'Driver',
-                'salary' => 80,000,
-                'place' => 'Asella'
-            ]
-        ]]);
+    //         [
+    //             'id' => 1,
+    //             'title' => 'bodyguard',
+    //             'salary' => 90,000,
+    //             'place' => 'adama'
+    //         ], [
+    //             'id' => 2,
+    //             'title' => 'programmer',
+    //             'salary' => 70,000,
+    //             'place' => 'bishoftu'
+    //         ], [
+    //             'id' => 3,
+    //             'title' => 'Driver',
+    //             'salary' => 80,000,
+    //             'place' => 'Asella'
+    //         ]
+    //     ]]);
 });
 
 Route::get('/jobs/{id}', function ($id) {
